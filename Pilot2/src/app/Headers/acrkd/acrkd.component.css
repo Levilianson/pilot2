@@ -1,0 +1,55 @@
+
+h2{
+    font-weight: bold;
+}
+
+/*estilo foto perfil por tamaños*/
+@media (min-width: 576px){
+    #foto{
+        position: relative;
+        margin-top: -6%;        
+    }
+    #perfil{
+        position:relative;
+        width: 100%;
+        border-radius: 20%;
+        box-shadow: 3px 3px 3px blue;
+    }
+    #nombre{
+        text-align: center;
+        position:relative;
+        left: 5px;
+        
+    }
+    #acerca{
+        text-align: justify;
+        position:relative;
+        left: 5px;        
+    }
+}
+@media (max-width: 575px){
+    #foto{
+        top: 5px;
+        position: relative;
+        width: 95%;
+        left: 10px;                
+    }
+    #perfil{         
+        align-self: auto;
+        width: 100%;
+        border-radius: 20%;
+        
+    }
+    #nombre{
+        top: 5px;
+        text-align: center;
+        position:relative;
+        width: 100%;       
+    }
+    #acerca{
+        top: 5px;
+        text-align: center;
+        position:relative;
+        width: 100%;        
+    }
+}
