@@ -11,6 +11,10 @@ import { AcrkdComponent } from './Headers/acrkd/acrkd.component';
 import { ExperienciaComponent } from './Cuerpo/experiencia/experiencia.component';
 import { EducacionComponent } from './Cuerpo/educacion/educacion.component';
 import { BodyComponent } from './Cuerpo/body/body.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { PorcComponent } from './Cuerpo/porc/porc.component';
+import { ProyComponent } from './Cuerpo/proy/proy.component';
+import { FootComponent } from './Footer/foot/foot.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,22 @@ import { BodyComponent } from './Cuerpo/body/body.component';
     AcrkdComponent,
     ExperienciaComponent,
     EducacionComponent,
-    BodyComponent
+    BodyComponent,
+    PorcComponent,
+    ProyComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({     
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

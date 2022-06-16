@@ -1,0 +1,13 @@
+.row{
+    padding: 10px;
+}
+div{
+    background-color: blueviolet;
+}
+footer{
+    color:aquamarine;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

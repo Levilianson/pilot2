@@ -1,7 +1,23 @@
 div{
     background-color: blueviolet;
 }
-app-social{
-    float: right;
-    margin-top: 20px;
+@media(min-width: 450px){
+    app-social{
+        float: right;
+        margin-top: 5%;
+    }
+    app-logo{
+        float: left;
+        margin-top: 5%;
+    }
+}
+  
+@media(max-width: 451px){
+    app-social{
+        float: right;
+        margin-top: 1%;
+    }
+    app-logo{
+        margin-top: 1%;
+    }    
 }
