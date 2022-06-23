@@ -15,6 +15,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { PorcComponent } from './Cuerpo/porc/porc.component';
 import { ProyComponent } from './Cuerpo/proy/proy.component';
 import { FootComponent } from './Footer/foot/foot.component';
+import { HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './Inicio/home/home.component';
+import { LogginComponent } from './Inicio/loggin/loggin.component'
 
 @NgModule({
   declarations: [
@@ -29,10 +32,13 @@ import { FootComponent } from './Footer/foot/foot.component';
     BodyComponent,
     PorcComponent,
     ProyComponent,
-    FootComponent
+    FootComponent,
+    HomeComponent,
+    LogginComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({     
       radius: 100,
